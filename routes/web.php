@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// home
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+//nosotros
+Route::get('/nosotros', function () {
+    return view('nosotros');
+});
+//contactanos
+Route::get('/contactanos', function () {
+    return view('contactanos');
+});
+//servicios
+Route::get('/servicios', function () {
+    return view('servicios');
+});
+//Vitrina
+Route::get('/productos', function () {
+    return view('productos');
 });
