@@ -27,8 +27,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contactos" role="button">
-                    Contáctanos
+                  <a class="nav-link" href="/contacto" role="button">
+                    Contacto
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/productos" role="button">
+                    Productos
                   </a>
                 </li>
               </ul>
