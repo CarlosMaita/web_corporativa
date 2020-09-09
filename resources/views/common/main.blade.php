@@ -32,26 +32,6 @@
     
     {{-- footer --}}
     @include('common.footer')
-<<<<<<< HEAD
-    <!--Div where the WhatsApp will be rendered-->  
-    <div id="WAButton"></div>  
-
-
-    <script type="text/javascript">  
-       $(function () {
-               $('#WAButton').floatingWhatsApp({
-                   phone: 'WHATSAPP-PHONE-NUMBER', //WhatsApp Business phone number
-                   headerTitle: 'Chat with us on WhatsApp!', //Popup Title
-                   popupMessage: 'Hello, how can we help you?', //Popup Message
-                   showPopup: true, //Enables popup display
-                   buttonImage: '<img src="js/vendor/floating_whatsapp/whatsapp.svg" />', //Button Image
-                   //headerColor: 'crimson', //Custom header color
-                   //backgroundColor: 'crimson', //Custom background button color
-                   position: "right" //Position: left | right
-
-               });
-           });
-=======
     
     <!--Div where the WhatsApp will be rendered-->
     <div id="WAButton" style="border-radius: 50%;"></div>
@@ -71,7 +51,6 @@
         position: "right"    
       });
     });
->>>>>>> ba67911cd09061ed101c5fac2a973c31831d92db
     </script>  
  
 
