@@ -5,6 +5,8 @@
 @endsection
 
 
+
+
 @section('content')
     {{-- header principal --}}
     @include('common.header')

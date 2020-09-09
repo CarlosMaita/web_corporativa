@@ -16,20 +16,24 @@ use App\Category;
 
 // home
 Route::get('/', function () {
-    return view('home');
+	$categories = Category::all();
+    return view('home', compact('categories'));
 });
 
 //nosotros
 Route::get('/nosotros', function () {
-    return view('nosotros');
+	$categories = Category::all();
+    return view('nosotros', compact('categories'));
 });
 //contactanos
 Route::get('/contacto', function () {
-    return view('contacto');
+	$categories = Category::all();
+    return view('contacto', compact('categories'));
 });
 //servicios
 Route::get('/servicios', function () {
-    return view('servicios');
+	$categories = Category::all();
+    return view('servicios', compact('categories'));
 });
 //Vitrina
 Route::get('/productos', function () {

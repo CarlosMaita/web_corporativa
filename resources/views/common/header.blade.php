@@ -2,7 +2,7 @@
     <!-- header -->
     <header class="header-sticky header-dark">
         <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-dark">
+          <nav class="navbar navbar-expand-lg navbar-{{$color_header ?? 'light'}}">
             <a class="navbar-brand" href="../../index.html">
               {{-- <img class="navbar-logo navbar-logo-light" src="../../assets/images/demo/logo/logo-light.svg" alt="Logo"> --}}
               {{-- <img class="navbar-logo navbar-logo-dark" src="../../assets/images/demo/logo/logo-dark.svg" alt="Logo"> --}}
@@ -44,20 +44,13 @@
                     Nuestras Lineas
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="../../landing-pages.html">
-                      <span>Alimentos</span>
-                      <p>Los mejores alimentos frescos</p>
+                    @foreach($categories as $category)
+                    <a class="dropdown-item" href="#">
+                      <span>{{$category->title}}</span>
+                      <p>Descripcion base de datos</p>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="../../inner-pages.html">
-                      <span>Viveres</span>
-                      <p>Licores para todos los gustos</p>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="../../app-pages.html">
-                      <span>Cosmeticos</span>
-                      <p>Para cuidar la salud de los clientes</p>
-                    </a>
+                    @endforeach
                   </div>
                 </li>
               </ul>

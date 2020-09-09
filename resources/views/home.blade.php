@@ -4,6 +4,11 @@
     <title>Home</title>
 @endsection
 
+@php
+// importante para el color de las letras del header
+$color_header='dark';
+@endphp
+
 
 @section('content')
     {{-- header principal --}}
