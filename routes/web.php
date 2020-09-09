@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Product;
+use App\Category;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,5 +33,7 @@ Route::get('/servicios', function () {
 });
 //Vitrina
 Route::get('/productos', function () {
-    return view('vitrina');
+	$products = Product::with(['category'])->get();
+	$categories = Category::all();
+    return view('vitrina', compact('products', 'categories'));
 });

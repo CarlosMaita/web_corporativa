@@ -29,10 +29,10 @@
           <div class="row">
             <div class="col">
               <div class="nav nav-tabs">
-                <a class="nav-item nav-link active" data-filter="all">All</a>
-                <a class="nav-item nav-link" data-filter="branding">Branding</a>
-                <a class="nav-item nav-link" data-filter="illustration">Illustration</a>
-                <a class="nav-item nav-link" data-filter="photography">Photography</a>
+                <a class="nav-item nav-link active" data-filter="All">All</a>
+                @foreach($categories as $category)
+                <a class="nav-item nav-link " data-filter="{{$category->id}}">{{$category->title}}</a>
+                @endforeach
               </div>
             </div>
           </div>
@@ -41,52 +41,19 @@
           <div class="row">
             <div class="col">
               <ul class="row gutter-0 gallery filtr-container ">
-                <li class="col-6 col-md-4 col-lg-3 filtr-item" data-category="all, branding" data-sort="value">
+                @foreach($products as $product)
+                <li class="col-6 col-md-4 col-lg-3 filtr-item" data-category="All, {{$product->category->id}}" data-sort="value">
                   <figure class="photo equal">
-                    <a href="images/demo/minimal/portfolio-1.jpg" 
-                      style="background-image: url(images/demo/minimal/portfolio-1.jpg);">
+                    <a href="{{asset('images/'.$product->image)}}" 
+                      style="background-image: url({{asset('images/'.$product->image)}});">
                       <figcaption class="photo-caption">
-                        <span>Ron santa Teresa</span>
-                        <p>EL mejor de todos los rones, la verdad que es maravillosos todo este producto</p>
+                        <span>{{$product->title}}</span>
+                        <p>{{$product->description}}</p>
                       </figcaption>
                     </a>
                   </figure>
                 </li>
-                <li class="col-6 col-md-4 col-lg-3 filtr-item" data-category="all, illustration" data-sort="value">
-                  <figure class="photo equal">
-                    <a href="images/demo/minimal/portfolio-2.jpg" 
-                      style="background-image: url(images/demo/minimal/portfolio-2.jpg);">
-                    </a>
-                  </figure>
-                </li>
-                <li class="col-6 col-md-4 col-lg-3 filtr-item" data-category="all, photography" data-sort="value">
-                  <figure class="photo equal">
-                    <a href="images/demo/minimal/portfolio-3.jpg" 
-                      style="background-image: url(images/demo/minimal/portfolio-3.jpg);">
-                    </a>
-                  </figure>
-                </li>
-                <li class="col-6 col-md-4 col-lg-3 filtr-item" data-category="all, illustration" data-sort="value">
-                  <figure class="photo equal">
-                    <a href="images/demo/minimal/portfolio-4.jpg" 
-                      style="background-image: url(images/demo/minimal/portfolio-4.jpg);">
-                    </a>
-                  </figure>
-                </li>
-                <li class="col-6 col-md-4 col-lg-3 filtr-item" data-category="all, branding" data-sort="value">
-                  <figure class="photo equal">
-                    <a href="images/demo/minimal/portfolio-5.jpg" 
-                      style="background-image: url(images/demo/minimal/portfolio-5.jpg);">
-                    </a>
-                  </figure>
-                </li>
-                <li class="col-6 col-md-4 col-lg-3 filtr-item" data-category="all, illustration, branding" data-sort="value">
-                  <figure class="photo equal">
-                    <a href="images/demo/minimal/portfolio-6.jpg" 
-                      style="background-image: url(images/demo/minimal/portfolio-6.jpg);">
-                    </a>
-                  </figure>
-                </li>
+                @endforeach
                 
               </ul>
             </div>
