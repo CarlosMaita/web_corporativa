@@ -34,7 +34,7 @@
     @include('common.footer')
     
     <!--Div where the WhatsApp will be rendered-->
-    <div id="WAButton" style="border-radius: 50%;"></div>
+    <div id="WAButton" style="border-radius: 50%; z-index:100"></div>
   
 
     <script type="text/javascript">  
