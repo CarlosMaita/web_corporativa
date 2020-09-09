@@ -22,8 +22,8 @@
                 <div class="container">
                   <div class="row justify-content-center vh-100">
                     <div class="col-md-8 align-self-center text-center">
-                      <h1 data-swiper-parallax="-100%" class="display-2">Somos <b>distribuidores</b> de alimentos al mayor.</h1>
-                      <a href="" class="btn btn-rounded btn-white px-5">Conoce nuestra disponibilidad</a>
+                      <h1 data-swiper-parallax="-100%" class="display-3"><b>Distribuidores</b> de productos de consumo masivo.</h1>
+                      <a href="/servicios" class="btn btn-rounded btn-white px-5">Conoce nuestros servicios</a>
                     </div>
                   </div>
                 </div>
