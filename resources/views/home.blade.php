@@ -53,33 +53,40 @@ $color_header='dark';
     <section class="section-lg">
         <div class="container">
           <div class="row text-center text-lg-left">
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-lg-12">
               <div class="row">
-                <div class="col-lg-8">
-                  <h2>A good place <br>to build your startup.</h2>
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="col-lg-9">
+                  <h2>Distrialimentos del centro.</h2>
+                  <p class="lead">Somos una empresa con más de 6 años distribuyendo productos de consumo masivo para la zona Centro – Occidente del Venezuela.</p>
                 </div>
               </div>
               <div class="row gutter-0">
-                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   <div class="bordered rising p-3">
-                    <i class="icon-maximize text-green fs-40 mb-3"></i>
-                    <h4 class="mb-0">1000 ft<sup>2</sup></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <i class="icon-product-hunt text-green fs-40 mb-3"></i>
+                    <h4 class="mb-0">Productos</h4>
+                    <p>Los mejores productos con marcas reconocidas en toda Venezuela.</p>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="150">
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="150">
                   <div class="bordered rising p-3">
                     <i class="icon-users2 text-green fs-40 mb-3"></i>
-                    <h4 class="mb-0">80 members</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h4 class="mb-0">Vendedores</h4>
+                    <p>Atención personalizada con nuestro equipo de Venta en tu establecimiento.</p>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="150">
                   <div class="bordered rising p-3">
-                    <i class="icon-wifi2 text-green fs-40 mb-3"></i>
-                    <h4 class="mb-0">100 mb/s</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <i class="icon-cart-plus text-green fs-40 mb-3"></i>
+                    <h4 class="mb-0">Compras Online</h4>
+                    <p>Podras tomar tus pedidos de forma Online con nuestra plataforma de compra.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+                  <div class="bordered rising p-3">
+                    <i class="icon-truck2 text-green fs-40 mb-3"></i>
+                    <h4 class="mb-0">Despacho</h4>
+                    <p>Despacho garantizado a la puerta de su negocio en un plazo entre 48 y 72 horas.</p>
                   </div>
                 </div>
               </div>
