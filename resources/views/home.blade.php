@@ -22,13 +22,13 @@ $color_header='dark';
           data-top-bottom="transform: translateY(250px);">
           <div class="swiper-wrapper">
             <div class="swiper-slide vh-100">
-              <div class="image image-overlay" style="background-image:url({{asset('images/demo/coworking/coworking-1.jpg')}})"></div>
+              <div class="image image-overlay" style="background-image:url({{asset('images/portada/portada3.jpg')}})"></div>
               <div class="caption">
                 <div class="container">
                   <div class="row justify-content-center vh-100">
                     <div class="col-md-8 align-self-center text-center">
                       <h1 data-swiper-parallax="-100%" class="display-3"><b>Distribuidores</b> de productos de consumo masivo.</h1>
-                      <a href="/servicios" class="btn btn-rounded btn-white px-5">Conoce nuestros servicios</a>
+                      <a href="/nosotros" class="btn btn-rounded btn-white px-5">Mas información</a>
                     </div>
                   </div>
                 </div>
@@ -91,9 +91,9 @@ $color_header='dark';
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-3 presentation presentation-responsive">
-              {{-- <img class="left-25 vertical-align" src="images/demo/stock/plant.png" alt="Image"> --}}
-            </div>
+            {{-- <div class="col-12 col-lg-3 presentation presentation-responsive">
+              <img class="left-25 vertical-align" src="images/demo/stock/plant.png" alt="Image">
+            </div> --}}
           </div>
         </div>
       </section>
@@ -105,86 +105,41 @@ $color_header='dark';
         <div class="container gallery">
           <div class="row justify-content-center">
             <div class="col-md-6 text-center">
-              <h2><b>Modern interiors</b> for a better experience.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h2><b>Productos</b> para el mercado Venezolano.</h2>
+              <p class="d-none d-sm-block">Cadenas de Supermercados, hipermercados, minimercados, panaderías, carnicerías, bodegones, restaurantes y demás empresas del ramo.</p>
             </div>
           </div>
           <div class="row mb-1" data-aos="fade-left">
             <div class="col-10">
               <div class="owl-carousel visible align-bottom" data-items="[2,2,2]" data-margin="10" data-loop="true" data-autoplay="true">
-                <figure class="photo equal equal-short">
-                  <a href="{{asset('images/demo/coworking/coworking-small-1.jpg')}}" 
-                    style="background-image: url({{asset('images/demo/coworking/coworking-small-1.jpg')}});">
-                  </a>
-                </figure>
-                <figure class="photo equal">
-                  <a href="{{asset('images/demo/coworking/coworking-small-2.jpg')}}" 
-                    style="background-image: url({{asset('images/demo/coworking/coworking-small-2.jpg')}});">
-                  </a>
-                </figure>
-                <figure class="photo equal equal-short">
-                  <a href="{{asset('images/demo/coworking/coworking-small-3.jpg')}}" 
-                    style="background-image: url({{asset('images/demo/coworking/coworking-small-3.jpg')}});">
-                  </a>
-                </figure>
-                <figure class="photo equal">
-                  <a href="images/demo/coworking/coworking-small-4.jpg" 
-                    style="background-image: url({{asset('images/demo/coworking/coworking-small-4.jpg')}});">
-                  </a>
-                </figure>
-                <figure class="photo equal equal-short">
-                  <a href="images/demo/coworking/coworking-small-5.jpg" 
-                    style="background-image: url({{asset('images/demo/coworking/coworking-small-5.jpg')}});">
-                  </a>
-                </figure>
-                <figure class="photo equal">
-                  <a href="images/demo/coworking/coworking-small-1.jpg" 
-                    style="background-image: url({{asset('images/demo/coworking/coworking-small-3.jpg')}});">
-                  </a>
-                </figure>
+             @for ($i = 1 ; $i < 7; $i++)
+              <figure class="photo equal @php if ($i%2 ==0) echo 'equal-short'; @endphp">
+                <a href="{{asset('images/promo/promo'.$i.'.jpg')}}" 
+                  style="background-image: url({{asset('images/promo/promo'.$i.'.jpg')}});">
+                </a>
+              </figure>
+             @endfor
+             
               </div>
             </div>
           </div>
           <div class="row justify-content-end" data-aos="fade-right">
             <div class="col-10">
               <div class="owl-carousel visible" data-items="[2,2,2]" data-margin="10" data-loop="true" data-autoplay="true" data-rtl="true">
-                <figure class="photo equal equal-short">
-                  <a href="images/demo/coworking/coworking-small-6.jpg" 
-                    style="background-image: url({{asset('')}}images/demo/coworking/coworking-small-6.jpg);">
-                  </a>
-                </figure>
-                <figure class="photo equal">
-                  <a href="images/demo/coworking/coworking-small-7.jpg" 
-                    style="background-image: url({{asset('')}}images/demo/coworking/coworking-small-7.jpg);">
-                  </a>
-                </figure>
-                <figure class="photo equal equal-short">
-                  <a href="images/demo/coworking/coworking-small-8.jpg" 
-                    style="background-image: url({{asset('')}}images/demo/coworking/coworking-small-8.jpg);">
-                  </a>
-                </figure>
-                <figure class="photo equal">
-                  <a href="images/demo/coworking/coworking-small-9.jpg" 
-                    style="background-image: url({{asset('')}}images/demo/coworking/coworking-small-9.jpg);">
-                  </a>
-                </figure>
-                <figure class="photo equal equal-short">
-                  <a href="images/demo/coworking/coworking-small-10.jpg" 
-                    style="background-image: url({{asset('')}}images/demo/coworking/coworking-small-10.jpg);">
-                  </a>
-                </figure>
-                <figure class="photo equal">
-                  <a href="images/demo/coworking/coworking-small-2.jpg" 
-                    style="background-image: url({{asset('')}}images/demo/coworking/coworking-small-2.jpg);">
-                  </a>
-                </figure>
+                @for ($i = 7 ; $i < 13; $i++)
+                  <figure class="photo equal @php if ($i%2 ==0) echo 'equal-short'; @endphp">
+                    <a href="{{asset('images/promo/promo'.$i.'.jpg')}}" 
+                      style="background-image: url({{asset('images/promo/promo'.$i.'.jpg')}});">
+                    </a>    
+                  </figure>
+                @endfor
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col text-center">
             <a href="/productos">
-                <button type="button" class="btn btn-rounded btn-with-ico btn-green">Ver Productos <i class="icon-chevron-right2 fs-24"></i></button>
+                <button type="button" class="btn btn-rounded btn-with-ico btn-green">Ver nuestros Productos <i class="icon-chevron-right2 fs-24"></i></button>
             </a>
             </div>
           </div>
@@ -198,20 +153,12 @@ $color_header='dark';
         <div class="container">
           <div class="row justify-content-between align-items-center">
             <div class="col-md-7">
-              <video
-                poster="images/demo/coworking/coworking-3.jpg"
-                id="video"
-                class="youtube video-js vjs-default-skin video-16-9"
-                controls
-                width="640" height="264"
-                data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=DkeiKbqa02g"}], "youtube": { "ytControls": 2 } }'
-              >
-              </video>
+              <img src="{{asset('images/cta/compras.jpg')}}" alt="">
             </div>
             <div class="col-md-4 text-center text-md-left">
-              <span class="eyebrow mb-1 text-green">Video</span>
-              <h2>Our Most Requested Tour</h2>
-              <a href="" class="btn btn-green btn-rounded">Reserve Now</a>
+              <span class="eyebrow mb-1 text-green">Atencion al cliente</span>
+              <h2>Solicita un vendedor a tu negocio.</h2>
+              <a href="https://api.whatsapp.com/send?phone=584244010776&text=Hola,%20quiero%20la%20atenci%C3%B3n%20de%20uno%20de%20sus%20vendedores%20a%20mi%20establecimiento.%20Gracias" class="btn btn-green btn-rounded">Solicitar atención</a>
             </div>
           </div>
         </div>
@@ -220,15 +167,15 @@ $color_header='dark';
 
         <!-- cta -->
     <section>
-        <div class="image image-overlay image-scrolling" style="background-image:url(images/demo/coworking/coworking-2.jpg)"
+        <div class="image image-overlay image-scrolling" style="background-image:url({{asset('images/cta/productos.jpg')}})"
         data--100-bottom-top="transform: translateY(0%);" 
         data-top-bottom="transform: translateY(25%);"></div>
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-md-8 col-lg-6 text-center text-white text-shadow">
-              <span class="eyebrow mb-1">More Questions ?</span>
-              <h2 class="display-4">Ask our <b>live support</b> via chat or phone</h2>
-              <a href="" class="btn btn-white btn-rounded px-4">Get in Touch</a>
+              <span class="eyebrow mb-1">¿Más preguntas ?</span>
+              <h2 class="display-4"><b>Nuestro equipo</b> via Whatsapp</h2>
+              <a href="https://api.whatsapp.com/send?phone=584244010776&text=Gracias+por+comunicarte+con+Distrialimentos+Del+Centro+%C2%BFEn+que+podemos+servirte%3Fs" class="btn btn-white btn-rounded px-4">Iniciar conversación</a>
             </div>
           </div>
         </div>
@@ -242,70 +189,77 @@ $color_header='dark';
           <div class="row">
             <div class="col-md-6">
               <div class="accordion-group accordion-group-highlight" data-accordion-group>
+                <div class="accordion" data-accordion data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                  <div class="accordion-control" data-control>
+                    <h5>QUIENES SOMOS</h5>
+                  </div>
+                  <div class="accordion-content" data-content>
+                    <div class="accordion-content-wrapper">
+                      <p>Somos una empresa distribuidora de productos de consumo masivo, fundada bajo los cimientos de la experiencia en el sector con otras empresas especializadas en la distribución e importación de productos en el área del Food Service.</p>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="accordion open" data-accordion data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   <div class="accordion-control" data-control>
-                    <h5>How do your Membership Agreements work?</h5>
+                    <h5>UBICACIÓN</h5>
                   </div>
                   <div class="accordion-content" data-content>
                     <div class="accordion-content-wrapper">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</p>
+                      <p>Estamos ubicados en Valencia, Estado Carabobo.  Zona Industrial Sur, Centro Empresarial Arturo Michelena Local D8. <a href="">Ubicación en Google Map</a></p>
                     </div>
                   </div>
                 </div>
+                
                 <div class="accordion" data-accordion data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   <div class="accordion-control" data-control>
-                    <h5>Do I have to sign a lease agreement?</h5>
+                    <h5>TIEMPOS DE DESPACHO</h5>
                   </div>
                   <div class="accordion-content" data-content>
                     <div class="accordion-content-wrapper">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</p>
+                      <p>Despacho garantizado a la puerta de su establecimiento en un plazo entre cuarenta y ocho (48) a setenta y dos (72) horas.</p>
                     </div>
                   </div>
                 </div>
-                <div class="accordion" data-accordion data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                  <div class="accordion-control" data-control>
-                    <h5>What are your standard working hours?</h5>
-                  </div>
-                  <div class="accordion-content" data-content>
-                    <div class="accordion-content-wrapper">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</p>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
             <div class="col-md-6">
               <div class="accordion-group accordion-group-highlight" data-accordion-group>
+
                 <div class="accordion open" data-accordion data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   <div class="accordion-control" data-control>
-                    <h5>What about phone service in my private office?</h5>
+                    <h5>EXPERIENCIA</h5>
                   </div>
                   <div class="accordion-content" data-content>
                     <div class="accordion-content-wrapper">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</p>
+                      <p>Contamos con seis (6) años de experiencia en la distribución y comercialización de productos de consumo masivo en el sector de food service.</p>
                     </div>
                   </div>
                 </div>
+                
                 <div class="accordion" data-accordion data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   <div class="accordion-control" data-control>
-                    <h5>Can guests visit me at my private office?</h5>
+                    <h5>HORARIOS</h5>
                   </div>
                   <div class="accordion-content" data-content>
                     <div class="accordion-content-wrapper">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</p>
+                      <p>Nuestro horario de atención en oficina es de lunes a viernes de 8:00 AM a 5:00 PM.</p>
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion" data-accordion data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   <div class="accordion-control" data-control>
-                    <h5>What is the minimal lease period?</h5>
+                    <h5>ATENCION AL CLIENTE</h5>
                   </div>
                   <div class="accordion-content" data-content>
                     <div class="accordion-content-wrapper">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam odit voluptatum, rem libero modi labore porro commodi inventore architecto explicabo reiciendis, perspiciatis voluptatibus odio, sequi nobis? Optio, aperiam, tenetur!</p>
+                      <p>Podrás ser atendido por whatsapp, llamada, correo o presencial con nuestros vendedores.</p>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -314,5 +268,25 @@ $color_header='dark';
       <!-- / faq -->
 
 
+    <!-- partners -->
+        <div class="tab-pane show active" id="component-1-1" role="tabpanel" aria-labelledby="component-1-1">
+          <div class="component-example">
+            <div class="container">
+              <div class="row">
+                <div class="col partners align-items-center">
+                  <div class="owl-carousel" data-items="[6,4,2]" data-loop="true" data-autoplay="true">
+                    @for ($i = 1; $i < 23; $i++)
+                    <div class="logo">
+                      <img src="{{ asset('images/marcas/marca'.$i.'.jpg') }}" alt="Logo">
+                    </div>
+                    @endfor
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- / partners -->
 
 @endsection
