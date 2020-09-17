@@ -1,10 +1,11 @@
 <!-- footer 4 -->
-            <footer class="bg-dark text-white">
+            <footer class="footer-light text-dark">
              
               <div class="container">
                 <div class="row">
-                    <div class="col col-lg-2">
-                        <ul class="list-group list-group-minimal">
+                    <div class="col col-lg-4 d-none d-sm-block">
+                      <h5 class="text-left">Mapa del sitio</h5>
+                        <ul class="list-group list-group-minimal text-left">
                             <li class="list-group-item"><a href="/">Inicio</a></li>
                             <li class="list-group-item"><a href="/nosotros">Nosotros</a></li>
                             <li class="list-group-item"><a href="/productos">Productos</a></li>
@@ -12,12 +13,18 @@
                           </ul>
                       </div>
                   <div class="col-lg-4">
-                    <div class="mb-1">
-                      <img class="logo-sm" src="../assets/images/demo/logo/logo-light.svg" alt="Logo">
+                    <div class="mb-1 text-center">
+                      <img style="max-height: 4rem;" class="logo-sm text-center" src="{{asset('images/portada/logo-svg.svg')}}" alt="Logo" >
                     </div>
-                    <span class="lead"><i>Distrialimentos Del Centro Trabajamos para tu comodidad y la de tu familia.</i></span>
+                    <div class="text-center">
+                      <h1 class="lead text-dark">Distrialimentos Del Centro <br></h1>
+                      <small>
+                        <i>Trabajamos para tu comodidad y la de tu familia.</i>
+                      </small>
+                    </div>
+
                   </div>
-                  <div class="col-md-6 text-md-right text-center" >
+                  <div class="col-lg-4 col-md-6 text-md-right text-center" >
                     <ul class="socials">
                       <li><a target= "_blank" href="https://www.facebook.com/pages/category/Foodservice-Distributor/Distrialimentos-del-Centro-108280487658106/" class="icon-facebook fs-20"></a></li>
                       <li><a target= "_blank" href="https://www.instagram.com/distrialimentosdelcentro/" class="icon-instagram fs-20"></a></li>
@@ -34,7 +41,7 @@
                         <span class="copyright-text"><br>&copy; 2020 Distrialimentos del Centro, Todos los derechos reservados.</span>
                     </div>
                     <div class="col-lg-6 text-lg-right  text-center">
-                        <a href="tel:+58-424-401-07-76" class="phone bordered text-light ">+58 424 401 0776</a><br>
+                        <a href="tel:+58-424-401-07-76" class="phone bordered text-dark ">+58 424 401 0776</a><br>
                     </div>
                   </div>
                 </div>

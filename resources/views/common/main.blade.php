@@ -3,7 +3,8 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+        <link rel="icon" type="image/png" href="{{asset('favicon.png')}}">
+
         @yield('title')
         
         
@@ -42,12 +43,12 @@
       $('#WAButton').floatingWhatsApp({
         phone: '584244010776', //WhatsApp Business phone number International format-
         //Get it with Toky at https://toky.co/en/features/whatsapp.
-        headerTitle: '¡Escribenos por WhatsApp!', //Popup Title
+        headerTitle: 'Atención al Cliente', //Popup Title
         popupMessage: 'Hola, ¿Como podemos ayudarte?', //Popup Message
         showPopup: true, //Enables popup display
         buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
-        // headerColor: 'crimson', //Custom header color
-        // backgroundColor: 'crimson', //Custom background button color
+        headerColor: '#02518D', //Custom header color
+        // backgroundColor: '#02518D', //Custom background button color
         position: "right"    
       });
     });

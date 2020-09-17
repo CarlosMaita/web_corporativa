@@ -64,7 +64,7 @@ $color_header='dark';
       <div class="row justify-content-center">
         <div class="col-md-10 text-center p-5">
           <h1 data-swiper-parallax="-100%" class="display-3"><b>Distribución</b> de productos de consumo masivo.</h1>
-          <a href="/productos" class="btn btn-purple btn-rounded px-5">Nuestros Productos</a>
+          <a href="/productos" class="btn btn-blue btn-rounded px-5">Nuestros Productos</a>
         </div>
       </div>
       <div class="row" data-aos="fade-up" data-aos-delay="250">
@@ -163,12 +163,11 @@ $color_header='dark';
    <div class="container">
      <div class="row justify-content-between align-items-center">
        <div class="col-md-6 pr-md-4">
-         <h2><b>Distrialimentos del centro</b></h2>
-         <h3  class="mb-4">Trabajamos para tu comodidad y la de tu familia.</h3>
+        
          <div class="accordion-group accordion-group-highlight" data-accordion-group>
            <div class="accordion open" data-accordion data-aos="fade-up">
              <div class="accordion-control" data-control>
-               <h5>¿Quiénes somos?</h5>
+               <h5>QUIENES SOMOS</h5>
              </div>
              <div class="accordion-content" data-content>
                <div class="accordion-content-wrapper">
@@ -178,7 +177,7 @@ $color_header='dark';
            </div>
            <div class="accordion" data-accordion data-aos="fade-up">
              <div class="accordion-control" data-control>
-               <h5>¿cuál es nuestra Misión?</h5>
+               <h5>MISIÓN</h5>
              </div>
              <div class="accordion-content" data-content>
                <div class="accordion-content-wrapper">
@@ -188,7 +187,7 @@ $color_header='dark';
            </div>
            <div class="accordion" data-accordion data-aos="fade-up">
              <div class="accordion-control" data-control>
-               <h5>¿Cuál es nuestra Visión?</h5>
+               <h5>VISIÓN</h5>
              </div>
              <div class="accordion-content" data-content>
                <div class="accordion-content-wrapper">
@@ -198,7 +197,7 @@ $color_header='dark';
            </div>
            <div class="accordion" data-accordion data-aos="fade-up">
             <div class="accordion-control" data-control>
-              <h5>¿A qué se dedica la empresa exactamente?</h5>
+              <h5>LINEAS DE PRODUCTOS</h5>
             </div>
             <div class="accordion-content" data-content>
               <div class="accordion-content-wrapper">
@@ -208,7 +207,7 @@ $color_header='dark';
           </div>
           <div class="accordion" data-accordion data-aos="fade-up">
             <div class="accordion-control" data-control>
-              <h5>¿A qué lugares distribuye la empresa?</h5>
+              <h5>DISTRIBUCIÓN</h5>
             </div>
             <div class="accordion-content" data-content>
               <div class="accordion-content-wrapper">
@@ -221,7 +220,9 @@ $color_header='dark';
          </div>
        </div>
        <div class="col-md-6">
-         <img src="{{asset('images/portada/logo.png')}}" alt="Image">
+         <img src="{{asset('images/portada/logo-full.png')}}" alt="Image">
+         {{-- <h2><b>Distrialimentos del centro</b></h2> --}}
+         <h3  class="mb-4">Trabajamos para tu comodidad y la de tu familia.</h3>
        </div>
      </div>
    </div>
@@ -326,7 +327,7 @@ $color_header='dark';
      </div>
      <div class="row" data-aos="fade-up">
        <div class="col text-center">
-         <a href="/productos" class="btn btn-block btn-lg btn-secondary">Ver los Productos</a>
+         <a href="/productos" class="btn btn-block btn-lg btn-blue">Ver los Productos</a>
        </div>
      </div>
    </div>
@@ -334,13 +335,13 @@ $color_header='dark';
  <!-- / blog -->
  
     
-<section class="pb-2 bg-dark text-white">
+<section class="pb-2 bg-blue text-white">
     <div class="container">
       <div class="row justify-content-center">
         
         <div class="col-md-10 text-center">
           <h1>Solicita nuestro <b>Catálogo de productos</b></h1>
-          <a href="https://api.whatsapp.com/send?phone=584244010776&text=Hola,%20Estoy%20interesado%20en%20tener%20el%20catalogo%20de%20sus%20productos.%20Gracias%20" class="btn btn-lg btn-purple btn-rounded mt-2 py-2 px-7">Solicitar catalogo</a>
+          <a href="https://api.whatsapp.com/send?phone=584244010776&text=Hola,%20Estoy%20interesado%20en%20tener%20el%20catalogo%20de%20sus%20productos.%20Gracias%20" class="btn btn-lg btn-primary btn-rounded mt-2 py-2 px-7">Solicitar catalogo</a>
         </div>
        
       </div>

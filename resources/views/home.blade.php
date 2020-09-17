@@ -63,28 +63,28 @@ $color_header='dark';
               <div class="row gutter-0">
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                   <div class="bordered rising p-3">
-                    <i class="icon-product-hunt text-green fs-40 mb-3"></i>
+                    <i class="icon-product-hunt text-primary fs-40 mb-3"></i>
                     <h4 class="mb-0">Productos</h4>
                     <p>Los mejores productos con marcas reconocidas en toda Venezuela.</p>
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="150">
                   <div class="bordered rising p-3">
-                    <i class="icon-users2 text-green fs-40 mb-3"></i>
+                    <i class="icon-users2 text-primary fs-40 mb-3"></i>
                     <h4 class="mb-0">Vendedores</h4>
                     <p>Atención personalizada con nuestro equipo de Venta en tu establecimiento.</p>
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="150">
                   <div class="bordered rising p-3">
-                    <i class="icon-cart-plus text-green fs-40 mb-3"></i>
+                    <i class="icon-cart-plus text-primary fs-40 mb-3"></i>
                     <h4 class="mb-0">Compras Online</h4>
                     <p>Podras tomar tus pedidos de forma Online con nuestra plataforma de compra.</p>
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
                   <div class="bordered rising p-3">
-                    <i class="icon-truck2 text-green fs-40 mb-3"></i>
+                    <i class="icon-truck2 text-primary fs-40 mb-3"></i>
                     <h4 class="mb-0">Despacho</h4>
                     <p>Despacho garantizado a la puerta de su negocio en un plazo entre 48 y 72 horas.</p>
                   </div>
@@ -139,7 +139,7 @@ $color_header='dark';
           <div class="row">
             <div class="col text-center">
             <a href="/productos">
-                <button type="button" class="btn btn-rounded btn-with-ico btn-green">Ver nuestros Productos <i class="icon-chevron-right2 fs-24"></i></button>
+                <button type="button" class="btn btn-rounded btn-with-ico btn-blue">Ver nuestros Productos <i class="icon-chevron-right2 fs-24"></i></button>
             </a>
             </div>
           </div>
@@ -156,9 +156,9 @@ $color_header='dark';
               <img src="{{asset('images/cta/compras.jpg')}}" alt="">
             </div>
             <div class="col-md-4 text-center text-md-left">
-              <span class="eyebrow mb-1 text-green">Atencion al cliente</span>
+              <span class="eyebrow mb-1 text-primary">Atencion al cliente</span>
               <h2>Solicita un vendedor a tu negocio.</h2>
-              <a href="https://api.whatsapp.com/send?phone=584244010776&text=Hola,%20quiero%20la%20atenci%C3%B3n%20de%20uno%20de%20sus%20vendedores%20a%20mi%20establecimiento.%20Gracias" class="btn btn-green btn-rounded">Solicitar atención</a>
+              <a href="https://api.whatsapp.com/send?phone=584244010776&text=Hola,%20quiero%20la%20atenci%C3%B3n%20de%20uno%20de%20sus%20vendedores%20a%20mi%20establecimiento.%20Gracias" class="btn btn-primary btn-rounded">Solicitar atención</a>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@ $color_header='dark';
             <div class="col-md-8 col-lg-6 text-center text-white text-shadow">
               <span class="eyebrow mb-1">¿Más preguntas ?</span>
               <h2 class="display-4"><b>Nuestro equipo</b> via Whatsapp</h2>
-              <a href="https://api.whatsapp.com/send?phone=584244010776&text=Gracias+por+comunicarte+con+Distrialimentos+Del+Centro+%C2%BFEn+que+podemos+servirte%3Fs" class="btn btn-white btn-rounded px-4">Iniciar conversación</a>
+              <a href="https://api.whatsapp.com/send?phone=584244010776&text=Gracias+por+comunicarte+con+Distrialimentos+Del+Centro+%C2%BFEn+que+podemos+servirte%3Fs" class="btn btn-blue btn-rounded px-4">Iniciar conversación</a>
             </div>
           </div>
         </div>
@@ -269,7 +269,7 @@ $color_header='dark';
 
 
     <!-- partners -->
-        <div class="tab-pane show active" id="component-1-1" role="tabpanel" aria-labelledby="component-1-1">
+        <div class="tab-pane show active separator-bottom" id="component-1-1" role="tabpanel" aria-labelledby="component-1-1">
           <div class="component-example">
             <div class="container">
               <div class="row">
@@ -288,5 +288,19 @@ $color_header='dark';
         </div>
 
     <!-- / partners -->
+
+    <section class="pb-2 bg-blue text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          
+          <div class="col-md-10 text-center">
+            <h1>Solicita nuestro <b>Catálogo de productos</b></h1>
+            <a href="https://api.whatsapp.com/send?phone=584244010776&text=Hola,%20Estoy%20interesado%20en%20tener%20el%20catalogo%20de%20sus%20productos.%20Gracias%20" class="btn btn-lg btn-primary btn-rounded mt-2 py-2 px-7">Solicitar catalogo</a>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+  
 
 @endsection
