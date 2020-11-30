@@ -37,7 +37,9 @@ Route::get('/servicios', function () {
 });
 //Vitrina
 Route::get('/productos', function () {
-	$products = Product::with(['category'])->get();
+	$products = Product::with(['category'])->orderBy('category_id')->get();
 	$categories = Category::all();
     return view('vitrina', compact('products', 'categories'));
 });
+//Enviar información del fomulario
+Route::post('/mail', 'SendMail')->name('mail');

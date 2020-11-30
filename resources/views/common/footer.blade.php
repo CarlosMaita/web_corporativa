@@ -10,6 +10,7 @@
                             <li class="list-group-item"><a href="/nosotros">Nosotros</a></li>
                             <li class="list-group-item"><a href="/productos">Productos</a></li>
                             <li class="list-group-item"><a href="/contacto">Contacto</a></li>
+                            <li class="list-group-item"><a href="https://distrialimentos.morelynx.com/home.aspx">Comprar Online</a></li>
                           </ul>
                       </div>
                   <div class="col-lg-4">
@@ -32,6 +33,7 @@
                       <li><a target= "_blank" href="https://api.whatsapp.com/send?phone=584244010776&text=Gracias+por+comunicarte+con+Distrialimentos+Del+Centro+%C2%BFEn+que+podemos+servirte%3F" class="icon-whatsapp fs-20"></a></li>
                     </ul>
                   </div>
+                  
                 </div>
               </div>
               <div class="separator-top py-1">
@@ -39,7 +41,8 @@
                   <div class="row justify-content-center align-items-center">
                     <div class="col-md-6">
                         <span class="copyright-text"><br>&copy; 2020 Distrialimentos del Centro, Todos los derechos reservados.</span>
-                    </div>
+                        <br><small>Creado por <a target="_blank" href="https://oxas.tech" >Oxas Tech<a></small>
+                      </div>
                     <div class="col-lg-6 text-lg-right  text-center">
                         <a href="tel:+58-424-401-07-76" class="phone bordered text-dark ">+58 424 401 0776</a><br>
                     </div>
